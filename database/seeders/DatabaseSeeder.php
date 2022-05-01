@@ -24,7 +24,8 @@ class DatabaseSeeder extends Seeder
             'location' => 'Boston, MA',
             'email' => 'email1@email.com',
             'website' => 'https://www.acme.com',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima et illo reprehenderit quas possimus voluptas repudiandae cum expedita, eveniet aliquid, quam illum quaerat consequatur! Expedita ab consectetur tenetur delensiti?'
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima et illo reprehenderit quas possimus voluptas repudiandae cum expedita, eveniet aliquid, quam illum quaerat consequatur! Expedita ab consectetur tenetur delensiti?',
+            'logo' => 'acme.png'
         ]);
 
         Listing::create([
@@ -34,7 +35,8 @@ class DatabaseSeeder extends Seeder
             'location' => 'New York, NY',
             'email' => 'email2@email.com',
             'website' => 'https://www.starkindustries.com',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima et illo reprehenderit quas possimus voluptas repudiandae cum expedita, eveniet aliquid, quam illum quaerat consequatur! Expedita ab consectetur tenetur delensiti?'
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima et illo reprehenderit quas possimus voluptas repudiandae cum expedita, eveniet aliquid, quam illum quaerat consequatur! Expedita ab consectetur tenetur delensiti?',
+            'logo' => 'stark.png'
         ]);
 
         Listing::create([
@@ -44,7 +46,8 @@ class DatabaseSeeder extends Seeder
             'location' => 'Gotham, NY',
             'email' => 'email3@email.com',
             'website' => 'https://www.wayneenterprises.com',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima et illo reprehenderit quas possimus voluptas repudiandae cum expedita, eveniet aliquid, quam illum quaerat consequatur! Expedita ab consectetur tenetur delensiti?'
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima et illo reprehenderit quas possimus voluptas repudiandae cum expedita, eveniet aliquid, quam illum quaerat consequatur! Expedita ab consectetur tenetur delensiti?',
+            'logo' => 'wayne.png'
         ]);
 
         Listing::create([
@@ -54,7 +57,8 @@ class DatabaseSeeder extends Seeder
             'location' => 'Newark, NJ',
             'email' => 'email4@email.com',
             'website' => 'https://www.skynet.com',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima et illo reprehenderit quas possimus voluptas repudiandae cum expedita, eveniet aliquid, quam illum quaerat consequatur! Expedita ab consectetur tenetur delensiti?'
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima et illo reprehenderit quas possimus voluptas repudiandae cum expedita, eveniet aliquid, quam illum quaerat consequatur! Expedita ab consectetur tenetur delensiti?',
+            'logo' => 'skynet.png'
         ]);
 
         Listing::create([
@@ -64,7 +68,8 @@ class DatabaseSeeder extends Seeder
             'location' => 'Boston, MA',
             'email' => 'email4@email.com',
             'website' => 'https://www.wonka.com',
-            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima et illo reprehenderit quas possimus voluptas repudiandae cum expedita, eveniet aliquid, quam illum quaerat consequatur! Expedita ab consectetur tenetur delensiti?'
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima et illo reprehenderit quas possimus voluptas repudiandae cum expedita, eveniet aliquid, quam illum quaerat consequatur! Expedita ab consectetur tenetur delensiti?',
+            'logo' => 'wonks.png'
         ]);
 
         // Listing::factory(6)->create();
