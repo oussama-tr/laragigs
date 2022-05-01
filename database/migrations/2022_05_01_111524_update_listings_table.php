@@ -12,7 +12,7 @@ return new class extends Migration {
      */
     public function up()
     {
-        Schema::table('listings', function ($table) {
+        Schema::table('listings', function (Blueprint $table) {
             $table->string('logo')->nullable();
         });
     }
@@ -24,8 +24,10 @@ return new class extends Migration {
      */
     public function down()
     {
-        Schema::table('listings', function ($table) {
-            $table->dropColumn('logo');
-        });
+        if (Schema::hasColumn('listings', 'logo')) {
+            Schema::table('listings', function (Blueprint $table) {
+                $table->dropColumn('logo');
+            });
+        }
     }
 };
