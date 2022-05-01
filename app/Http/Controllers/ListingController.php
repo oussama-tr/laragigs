@@ -19,7 +19,8 @@ class ListingController extends Controller
     public function show(Listing $listing)
     {
         return view('listings.show', [
-            'listing' => $listing
+            'listing' => $listing,
+            'isOwner' => $listing->user_id === auth()->id()
         ]);
     }
 
@@ -48,7 +49,7 @@ class ListingController extends Controller
         }
 
         $formFields['user_id'] = auth()->id();
-        
+
         Listing::create($formFields);
 
         return redirect('/')->with('message', 'Listing created successfully!');
@@ -63,6 +64,9 @@ class ListingController extends Controller
     // Update listing
     public function update(Request $request, Listing $listing)
     {
+        // Check if logged-in user is the listing owner
+        if ($listing->user_id != auth()->id()) abort(403, 'Unauthorized Action');
+
         $formFields = $request->validate([
             'title' => 'required',
             'company' => ['required'],
@@ -86,6 +90,9 @@ class ListingController extends Controller
     // Delete listing
     public function destroy(Listing $listing)
     {
+        // Check if logged-in user is the listing owner
+        if ($listing->user_id != auth()->id()) abort(403, 'Unauthorized Action');
+
         $listing->delete();
         return redirect('/')->with('message', 'Listing deleted successfully');
     }
